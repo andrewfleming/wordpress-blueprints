@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+	<title>WordPress AI Foundations</title>
+	<link>https://example.com</link>
+	<description>Example starting content for the WordPress AI Foundations demo</description>
+	<pubDate>Fri, 10 Jul 2026 12:00:00 +0000</pubDate>
+	<language>en-US</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>https://example.com</wp:base_site_url>
+	<wp:base_blog_url>https://example.com</wp:base_blog_url>
+
+	<wp:author>
+		<wp:author_id>1</wp:author_id>
+		<wp:author_login><![CDATA[admin]]></wp:author_login>
+		<wp:author_email><![CDATA[admin@localhost.com]]></wp:author_email>
+		<wp:author_display_name><![CDATA[admin]]></wp:author_display_name>
+		<wp:author_first_name><![CDATA[]]></wp:author_first_name>
+		<wp:author_last_name><![CDATA[]]></wp:author_last_name>
+	</wp:author>
+
+	<wp:category>
+		<wp:term_id>2</wp:term_id>
+		<wp:category_nicename><![CDATA[media]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Media]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>3</wp:term_id>
+		<wp:category_nicename><![CDATA[enterprise]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Enterprise]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>4</wp:term_id>
+		<wp:category_nicename><![CDATA[public-sector]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Public Sector]]></wp:cat_name>
+	</wp:category>
+
+	<!-- ==================== MEDIA ==================== -->
+
+	<item>
+		<title>Riverside State Clinches Conference Title on Buzzer-Beater</title>
+		<link>https://example.com/?p=101</link>
+		<pubDate>Mon, 15 Jun 2026 08:15:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://example.com/?p=101</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Riverside State punched its first NCAA tournament ticket in a decade on Saturday night, when freshman guard Malik Owens buried a fadeaway three at the buzzer to steal the conference championship from top-seeded Ashford Tech, 71-69.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The Wolves trailed by as many as 11 points in the second half before a late 14-2 run, capped by Owens' shot from just inside half-court range, sent the sold-out arena into pandemonium and the team's bench sprinting onto the floor.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"ai-image-prompt"} -->
+<p class="ai-image-prompt">🖼️ <strong>Image prompt for AI generation:</strong> "A packed college basketball arena erupting in celebration as the home team wins on a buzzer-beater."</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Final Box Score</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Team</th><th>1st Half</th><th>2nd Half</th><th>Final</th></tr></thead><tbody><tr><td>Ashford Tech</td><td>38</td><td>31</td><td>69</td></tr><tr><td>Riverside State</td><td>29</td><td>42</td><td>71</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>"I've been coaching for 22 years and I've never seen a building shake like that. That kid has no fear."</p><cite>Head coach Terrence Boyd</cite></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">By the Numbers</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><li>19 points, including 5 in the final two minutes</li><li>Named tournament MVP</li><li>First NCAA tournament bid for the program since 2016</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Riverside State will learn its seed and first-round opponent on Sunday during the nationally televised selection show. Ticket demand for the university's watch party has already exceeded the venue's 800-seat capacity.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>101</wp:post_id>
+		<wp:post_date><![CDATA[2026-06-15 08:15:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-06-15 08:15:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[riverside-state-clinches-conference-title-on-buzzer-beater]]></wp:post_name>
+		<wp:status><![CDATA[draft]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="media"><![CDATA[Media]]></category>
+	</item>
+
+	<item>
+		<title>Regional Manufacturer to Cut 200 Jobs as Orders Slow</title>
+		<link>https://example.com/?p=102</link>
+		<pubDate>Mon, 29 Jun 2026 09:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://example.com/?p=102</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Meridian Fabrication Co. will lay off roughly 200 workers at its plant on the east side of town, the company confirmed Friday, citing a sharp slowdown in orders from automotive manufacturers it supplies parts to.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The cuts amount to nearly a third of the plant's workforce and will take effect over the next six weeks. Meridian has operated in the area for 38 years and is one of the region's largest private employers outside of healthcare.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"ai-image-prompt"} -->
+<p class="ai-image-prompt">🖼️ <strong>Image prompt for AI generation:</strong> "Workers leaving a large industrial manufacturing plant at the end of a shift."</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">By the Numbers</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><li>200 positions eliminated, about 31% of plant staff</li><li>Layoffs phased in over six weeks starting July 20</li><li>Affected workers offered 8 weeks' severance and extended health coverage</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>"I've been on the line here for 14 years. You don't expect this from a company that's always said it takes care of its people."</p><cite>Denise Ackerman, machine operator</cite></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">A Pattern of Cutbacks</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Industry analysts point to a broader pullback in automotive production as manufacturers work through excess inventory built up during the past two years. Friday's announcement is Meridian's second round of layoffs in three years.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Year</th><th>Jobs Cut</th><th>Stated Reason</th></tr></thead><tbody><tr><td>2023</td><td>60</td><td>Plant automation upgrade</td></tr><tr><td>2026</td><td>200</td><td>Slowing automotive orders</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>Meridian says it does not expect further layoffs at the plant this year.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>102</wp:post_id>
+		<wp:post_date><![CDATA[2026-06-29 09:30:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-06-29 09:30:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[regional-manufacturer-to-cut-200-jobs-as-orders-slow]]></wp:post_name>
+		<wp:status><![CDATA[draft]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="media"><![CDATA[Media]]></category>
+	</item>
+
+	<item>
+		<title>Jury Convicts Local Contractor in Long-Running Fraud Case</title>
+		<link>https://example.com/?p=103</link>
+		<pubDate>Mon, 06 Jul 2026 11:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://example.com/?p=103</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>A jury convicted contractor Gary Hollis on eleven counts of fraud and theft by deception Thursday, following a two-week trial over a home-renovation scheme prosecutors say bilked at least 23 homeowners out of more than $650,000.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Prosecutors argued Hollis, who operated under the business name Hollis Home Restoration, routinely collected large upfront deposits for kitchen and bathroom remodels, then abandoned the jobs partway through or never showed up at all, often after cashing the checks within days.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"ai-image-prompt"} -->
+<p class="ai-image-prompt">🖼️ <strong>Image prompt for AI generation:</strong> "A contractor convicted of fraud leaving the county courthouse after the verdict."</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Case Timeline</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Date</th><th>Event</th></tr></thead><tbody><tr><td>March 2025</td><td>Charges filed following county consumer-fraud investigation</td></tr><tr><td>June 22, 2026</td><td>Trial begins</td></tr><tr><td>July 2, 2026</td><td>Jury returns guilty verdicts on 11 of 13 counts</td></tr><tr><td>August 2026</td><td>Sentencing scheduled</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>"This wasn't a contractor who ran into bad luck. This was a business model built on taking people's renovation savings and disappearing."</p><cite>Assistant District Attorney Priya Mehta</cite></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What Happens Next</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><li>Defense attorneys argued Hollis was overextended rather than deliberately fraudulent, citing supply-chain delays and a shortage of subcontractors.</li><li>Jurors deliberated for just under five hours before returning guilty verdicts.</li><li>Hollis faces up to 15 years in prison at sentencing next month.</li></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>His attorney said he intends to appeal.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>103</wp:post_id>
+		<wp:post_date><![CDATA[2026-07-06 11:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-07-06 11:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[jury-convicts-local-contractor-in-long-running-fraud-case]]></wp:post_name>
+		<wp:status><![CDATA[draft]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="media"><![CDATA[Media]]></category>
+	</item>
+
+	<!-- ==================== ENTERPRISE ==================== -->
+
+	<item>
+		<title>New Analytics Module Now Available</title>
+		<link>https://example.com/?p=104</link>
+		<pubDate>Mon, 22 Jun 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://example.com/?p=104</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>We're rolling out a new analytics module this week that gives teams real-time visibility into usage patterns across their entire deployment, without needing to export data to a separate BI tool.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The module was built in direct response to feedback from our largest customers, many of whom were stitching together spreadsheets and third-party dashboards just to answer basic questions like which teams were actually using a given feature, or where onboarding was stalling out.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"ai-image-prompt"} -->
+<p class="ai-image-prompt">🖼️ <strong>Image prompt for AI generation:</strong> "A product dashboard showing usage analytics charts and bar graphs on a laptop screen, with a badge highlighting it as the #1 rated analytics tool."</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What's New</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><li>Real-time usage dashboards, no export required</li><li>Configurable alerts on usage thresholds</li><li>Drill-down into individual account activity</li><li>No engineering involvement required to set up</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>"Our customers were building this exact thing themselves with spreadsheets and duct tape. We'd rather just give it to them."</p><cite>Head of Product, at the module's internal launch review</cite></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Rollout Schedule</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Plan</th><th>Availability</th></tr></thead><tbody><tr><td>Enterprise</td><td>Available now</td></tr><tr><td>Business</td><td>Available now</td></tr><tr><td>Starter</td><td>Later this quarter</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>The analytics module is available now for customers on our Business and Enterprise plans, with a phased rollout to Starter plans planned for later this quarter.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>104</wp:post_id>
+		<wp:post_date><![CDATA[2026-06-22 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-06-22 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[new-analytics-module-now-available]]></wp:post_name>
+		<wp:status><![CDATA[draft]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="enterprise"><![CDATA[Enterprise]]></category>
+	</item>
+
+	<item>
+		<title>Case Study: How a Mid-Market Retailer Cut Onboarding Time in Half</title>
+		<link>https://example.com/?p=105</link>
+		<pubDate>Wed, 01 Jul 2026 13:20:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://example.com/?p=105</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>When Halden Retail Group signed on last year, their biggest challenge wasn't finding a platform, it was getting store managers across 60 locations actually up and running on it without pulling IT staff off other projects for weeks at a time.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"ai-image-prompt"} -->
+<p class="ai-image-prompt">🖼️ <strong>Image prompt for AI generation:</strong> "A team celebrating a successful software rollout in a modern office, pointing excitedly at a screen."</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The Challenge</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Store managers needed to be onboarded quickly without pulling IT staff off other projects, but Halden's manual, spreadsheet-driven rollout process meant every new location took weeks to fully configure.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The Approach</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Working with our implementation team, Halden moved to an automated provisioning workflow built on our platform's role-based templates. New store locations that used to take three weeks to fully onboard were live within a week.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The Results</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Metric</th><th>Before</th><th>After</th></tr></thead><tbody><tr><td>Onboarding time per location</td><td>3 weeks</td><td>6 days</td></tr><tr><td>IT support tickets during rollout</td><td>Baseline</td><td>Down 54%</td></tr><tr><td>Full 60-location migration</td><td>Planned on schedule</td><td>Finished 2 months early</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><li>Onboarding time per location cut from 3 weeks to 6 days</li><li>IT support tickets during rollout down 54%</li><li>All 60 locations fully migrated two months ahead of schedule</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>"We stopped thinking about onboarding as an IT project. It became something a store manager could do on their own in an afternoon."</p><cite>Priya Nair, VP of Retail Operations, Halden Retail Group</cite></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Halden is now using the same automated workflow to support its expansion into six new markets this year.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>105</wp:post_id>
+		<wp:post_date><![CDATA[2026-07-01 13:20:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-07-01 13:20:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[case-study-mid-market-retailer-cuts-onboarding-time-in-half]]></wp:post_name>
+		<wp:status><![CDATA[draft]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="enterprise"><![CDATA[Enterprise]]></category>
+	</item>
+
+	<item>
+		<title>Company Announces Strategic Partnership With Northwind Cloud</title>
+		<link>https://example.com/?p=106</link>
+		<pubDate>Tue, 07 Jul 2026 12:40:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://example.com/?p=106</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>We're announcing a new strategic partnership with Northwind Cloud that will bring native, single-click deployment of our platform to Northwind's infrastructure marketplace starting this fall.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"ai-image-prompt"} -->
+<p class="ai-image-prompt">🖼️ <strong>Image prompt for AI generation:</strong> "Two business executives shaking hands to finalize a new partnership."</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What This Means for Customers</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><li>Faster provisioning through Northwind's marketplace</li><li>Simplified billing through an existing Northwind account</li><li>Deeper integration with Northwind's identity and access management tools</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>"Our customers keep telling us that consolidating vendors and simplifying procurement matters as much as the product itself. This integration means enterprise teams can deploy in minutes instead of weeks, using infrastructure they already trust."</p><cite>VP of Partnerships</cite></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Availability</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Milestone</th><th>Date</th></tr></thead><tbody><tr><td>Preview for select Enterprise customers</td><td>Next month</td></tr><tr><td>General availability</td><td>Q4</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>The integration will be available in preview to select Enterprise customers starting next month, with general availability planned for Q4.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>106</wp:post_id>
+		<wp:post_date><![CDATA[2026-07-07 12:40:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-07-07 12:40:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[company-announces-strategic-partnership-with-northwind-cloud]]></wp:post_name>
+		<wp:status><![CDATA[draft]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="enterprise"><![CDATA[Enterprise]]></category>
+	</item>
+
+	<!-- ==================== PUBLIC SECTOR ==================== -->
+
+	<item>
+		<title>Driver's License Renewals Now Available Online</title>
+		<link>https://example.com/?p=107</link>
+		<pubDate>Thu, 02 Jul 2026 07:45:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://example.com/?p=107</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Starting this month, residents can renew a standard driver's license entirely online through the Department of Motor Vehicles website, without visiting a branch office in person.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"ai-image-prompt"} -->
+<p class="ai-image-prompt">🖼️ <strong>Image prompt for AI generation:</strong> "A person happily using a laptop at home to renew their driver's license online."</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Do You Qualify?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The online renewal option is available if all of the following are true:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><li>Your license is not expired by more than one year</li><li>You do not need a new photo</li><li>You have no outstanding violations or medical reporting requirements on file</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Drivers who do not meet these conditions will still need to renew in person.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What You'll Need</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Requirement</th><th>Details</th></tr></thead><tbody><tr><td>Identification</td><td>Current license number</td></tr><tr><td>Verification</td><td>Last four digits of your Social Security number</td></tr><tr><td>Payment</td><td>Same fee as an in-person renewal</td></tr><tr><td>Processing time</td><td>Most renewals processed within 10 business days</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>"Most residents can now renew without ever visiting a branch office. It's one of the most requested improvements we've made."</p><cite>DMV Communications Office</cite></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>A temporary printable license is available immediately after payment. Residents who are not sure whether they qualify for online renewal can check their eligibility using the license lookup tool on the DMV website, or by calling the DMV customer service line.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>107</wp:post_id>
+		<wp:post_date><![CDATA[2026-07-02 07:45:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-07-02 07:45:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[drivers-license-renewals-now-available-online]]></wp:post_name>
+		<wp:status><![CDATA[draft]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="public-sector"><![CDATA[Public Sector]]></category>
+	</item>
+
+	<item>
+		<title>Applications Open for Home Energy Assistance Program</title>
+		<link>https://example.com/?p=108</link>
+		<pubDate>Fri, 03 Jul 2026 16:10:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://example.com/?p=108</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>The county is now accepting applications for this year's Home Energy Assistance Program, which helps eligible households pay heating and cooling bills and covers emergency furnace or air conditioning repairs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The program is open to households that meet the income guidelines below. You do not need to be behind on your bills to apply, and applying will not affect your utility service.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"ai-image-prompt"} -->
+<p class="ai-image-prompt">🖼️ <strong>Image prompt for AI generation:</strong> "A homeowner adjusting the thermostat in a comfortable, modern home."</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Am I Eligible?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Household Size</th><th>Annual Income at or Below</th></tr></thead><tbody><tr><td>1</td><td>$29,160</td></tr><tr><td>2</td><td>$39,440</td></tr><tr><td>4</td><td>$60,000</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What You'll Need to Apply</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><li>A recent photo ID</li><li>Proof of income for everyone in your household</li><li>A copy of your most recent utility bill</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>"We want every eligible household to apply. Reaching out for help with a utility bill is not something anyone should feel hesitant about."</p><cite>County Assistance Office</cite></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Applications are accepted online, by mail, or in person at any county assistance office. The deadline to apply for this program year is September 30. If you have questions about eligibility or need help completing your application, call the county assistance line or visit any county assistance office during business hours.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>108</wp:post_id>
+		<wp:post_date><![CDATA[2026-07-03 16:10:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-07-03 16:10:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[applications-open-for-home-energy-assistance-program]]></wp:post_name>
+		<wp:status><![CDATA[draft]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="public-sector"><![CDATA[Public Sector]]></category>
+	</item>
+
+	<item>
+		<title>Road Construction to Affect Main Street Traffic Starting Next Week</title>
+		<link>https://example.com/?p=109</link>
+		<pubDate>Wed, 08 Jul 2026 15:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://example.com/?p=109</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>The Department of Public Works will begin repaving Main Street between 3rd and 9th Avenue starting Monday, July 13. The project is expected to take approximately six weeks, weather permitting.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"ai-image-prompt"} -->
+<p class="ai-image-prompt">🖼️ <strong>Image prompt for AI generation:</strong> "A city street under repaving construction, with orange traffic cones and a paving crew at work."</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Detour Information</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>During construction, Main Street will be reduced to one lane in each direction, with traffic delays expected during morning and evening commute hours. Drivers heading downtown are encouraged to use Franklin Avenue or Route 9 as an alternate route during this period.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Project Schedule</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Phase</th><th>Dates</th><th>Lane Impact</th></tr></thead><tbody><tr><td>Milling and base repair</td><td>July 13 – July 24</td><td>One lane each direction</td></tr><tr><td>Repaving</td><td>July 27 – August 14</td><td>One lane each direction</td></tr><tr><td>Striping and cleanup</td><td>August 17 – August 21</td><td>Occasional single-lane closures</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><li>Sidewalks will remain open throughout construction</li><li>All businesses along Main Street will stay open during the project</li><li>Access to driveways and parking lots will be maintained, though drivers may experience brief delays near active work zones</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>"We know six weeks of construction is disruptive. We've scheduled the paving work in phases specifically to keep at least one lane open in each direction the entire time."</p><cite>Department of Public Works</cite></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Residents with questions about the project, or who need to request accommodations for a specific access need during construction, can contact the Department of Public Works project line.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>109</wp:post_id>
+		<wp:post_date><![CDATA[2026-07-08 15:30:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-07-08 15:30:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[road-construction-to-affect-main-street-traffic-starting-next-week]]></wp:post_name>
+		<wp:status><![CDATA[draft]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="public-sector"><![CDATA[Public Sector]]></category>
+	</item>
+
+</channel>
+</rss>

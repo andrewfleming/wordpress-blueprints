@@ -1,0 +1,30 @@
+{
+  "guideline_categories": {
+    "site": {
+      "guidelines": "This is a government agency website serving the general public, including residents with a wide range of literacy levels, first languages, and abilities. Its purpose is to help people understand what services they're eligible for and how to access them — not to promote or sell anything. The site's guiding priorities are neutrality, non-partisanship, factual accuracy, and equal usability for every constituent regardless of background; trust and accessibility come before style."
+    },
+    "copy": {
+      "guidelines": "Follow plain language principles: short sentences, common everyday words, and active voice. Write to a roughly 7th-9th grade reading level. Address the reader directly as 'you' when explaining how to use a service. Spell out acronyms and agency jargon on first use. Never use promotional or marketing language, hype, or superlatives — state facts plainly ('Applications are processed within 10 business days,' not 'Fast, hassle-free processing!'). Remain strictly non-partisan: do not use language that favors a political party, official, or viewpoint. Every page that describes a service must end with clear, actionable next steps (how to apply, who to contact, and any deadlines)."
+    },
+    "images": {
+      "guidelines": "Use authentic, official photography that represents the actual community being served, with diverse and accurate representation and a straightforward, unstaged mood — avoid generic corporate stock photography. Do not use imagery that could be read as endorsing a political party, candidate, or campaign."
+    },
+    "additional": {
+      "guidelines": "All content must meet WCAG 2.1 AA accessibility standards and align with plain-language requirements. Cite the specific statute, regulation, or official source behind any policy statement. Include effective dates on any time-sensitive information (fees, deadlines, eligibility rules) and note when a page was last reviewed. Define any legal or regulatory terms in plain language the first time they appear. Do not include partisan framing, opinion, or endorsement of any kind. Every image needs literal, descriptive alt text for screen readers, since accessibility compliance is a legal requirement here, not a preference."
+    },
+    "blocks": {
+      "core/heading": {
+        "guidelines": "Headings must be literal and descriptive of the content that follows — never clever or ambiguous. Use sentence case. A resident should be able to understand what a section covers just from the heading."
+      },
+      "core/paragraph": {
+        "guidelines": "One idea per paragraph, in plain language, at a 7th-9th grade reading level. Prefer short sentences and everyday words over formal or legal phrasing. Define any necessary technical or legal term the first time it's used."
+      },
+      "core/list": {
+        "guidelines": "Use numbered lists for sequential steps (e.g., how to apply) and bulleted lists for eligibility criteria or requirements, so residents can act on the information without reading dense paragraphs."
+      },
+      "core/table": {
+        "guidelines": "Use tables for fee schedules, deadlines, or eligibility data. Include clear column headers and keep cell content short; always state the effective date the data applies to."
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@
   "$schema": "https://playground.wordpress.net/blueprint-schema.json",
   "meta": {
     "title": "AI Building Blocks",
-    "author": "andrewfleming",
+    "author": "ajfleming",
     "description": "Stub blueprint — TODO: flesh out with the actual plugins/theme/content for the AI building blocks demo."
   },
   "landingPage": "/wp-admin/",
@@ -13,6 +13,13 @@
       "step": "installPlugin",
       "pluginData": { "resource": "wordpress.org/plugins", "slug": "gutenberg" },
       "options": { "activate": true }
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/andrewfleming/wordpress-blueprints/main/shared/content/ai-building-blocks+guidelines.xml"
+      }
     }
   ]
 }

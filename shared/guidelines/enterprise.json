@@ -1,0 +1,33 @@
+{
+  "guideline_categories": {
+    "site": {
+      "guidelines": "This is the website of a modern, high-growth B2B tech company selling software to other technical teams. Its audience is builders and the people who back them — engineering leaders, founders, platform and product teams — alongside the executives who sign off on the spend. These readers are sharp, skeptical of marketing fluff, and quick to leave; they respect substance, speed, and products that clearly work. The site's goal is to earn technical credibility fast, show the product doing real work, and make it obvious how to start building today. Differentiate through momentum and clarity, not corporate polish."
+    },
+    "copy": {
+      "guidelines": "Write with a confident, direct, modern voice — plain-spoken and human, never stiff or corporate. Contractions are welcome; address the reader as 'you' and speak in the active voice. Lead with what the product does and the outcome it creates, then back it with a concrete number, benchmark, or proof point ('cut build times from 40 minutes to 4' beats 'dramatically faster builds'). Be bold but honest: state capabilities plainly and skip empty hype like 'revolutionary', 'best-in-class', or 'game-changing' — let the specifics carry the weight. Keep sentences tight and skimmable; cut filler words and hedging. Respect technical readers by getting to the point and being precise about how things actually work. Use consistent product and brand capitalization per brand guidelines. End key sections with a clear, low-friction call to action ('Start building', 'Read the docs', 'Book a demo') rather than a hard sell."
+    },
+    "images": {
+      "guidelines": "Favor real product UI — clean screenshots, live dashboards, code, and architecture diagrams — over generic stock photography (never handshakes or people pointing at screens). Lean into a bold, modern tech aesthetic: high contrast, confident use of the brand palette, generous negative space, sharp typography, and thoughtful support for dark mode. The mood should feel energetic, precise, and in-motion — a product being built and shipped, not a boardroom. Keep color grading and resolution consistent across the site."
+    },
+    "additional": {
+      "guidelines": "Back every metric or capability claim with something citable, and flag legal or compliance claims (certifications, guarantees, security postures) for review before publishing. Never disparage named competitors — win on substance. Maintain consistent trademark usage (™/® on first mention per brand guidelines). Meet accessibility standards across imagery and interactive content; enterprise buyers still expect WCAG conformance. Alt text must convey the informational content for screen-reader users — what a dashboard, diagram, or code sample is actually showing — not a decorative description."
+    },
+    "blocks": {
+      "core/heading": {
+        "guidelines": "Headings should be sharp and concrete, stating the capability or outcome directly — punchy is good, vague or cute is not. Front-load the substance. Use sentence case for a modern feel, and reserve title case for major page titles per brand guidelines."
+      },
+      "core/paragraph": {
+        "guidelines": "Lead with the outcome or how it works, then the detail. Keep it tight and declarative — short sentences, active voice, no hedging ('might help', 'could potentially'). Write like you're explaining it to a smart engineer who's short on time."
+      },
+      "core/list": {
+        "guidelines": "Use lists to make features and benefits scannable. Each item leads with the concrete result or capability, not the plumbing (e.g., 'Ship to prod in one command' before 'via automated provisioning'). Keep items parallel and terse."
+      },
+      "core/code": {
+        "guidelines": "Show real, runnable examples that reflect actual usage — no pseudocode standing in for the real thing. Keep snippets minimal and focused on the point being made, label the language, and make sure they'd actually work if copied."
+      },
+      "core/quote": {
+        "guidelines": "Customer quotes need full attribution: name, title, and company. Prioritize quotes that name a specific, measurable result ('deploys dropped from hours to minutes') over generic praise."
+      }
+    }
+  }
+}

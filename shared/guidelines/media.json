@@ -1,0 +1,30 @@
+{
+  "guideline_categories": {
+    "site": {
+      "guidelines": "This is a fast-paced digital news publisher covering breaking news, politics, business, and culture for a broad, general-interest audience. Its primary readers scan multiple stories at once and often arrive from search or social, so every piece must earn attention in the first few seconds. The newsroom's goals are speed, accuracy, and clarity, and its identity is that of a trusted, independent source of factual, well-sourced reporting."
+    },
+    "copy": {
+      "guidelines": "Write in AP style. Lead with the most newsworthy fact (inverted pyramid) — never bury the lede. Use short, punchy sentences and strong active-voice verbs; avoid passive constructions and hedging language like 'may have' or 'reportedly appears to.' Attribute every claim and quote to a named source. Headlines must be clear and scannable, optimized for search and social, but never clickbait — no vague teasers, no all-caps, no excessive punctuation. Keep paragraphs to 1-3 sentences for mobile readability. Avoid jargon; explain acronyms on first use. Do not editorialize or insert opinion into straight news copy."
+    },
+    "images": {
+      "guidelines": "Prefer real, on-the-scene photography over stock images or illustrations whenever available, keeping a candid, documentary mood rather than a staged or polished one. Use standard news crop ratios — 16:9 for hero images, 4:3 for inline. Every image needs a cutline (caption) with photographer/source attribution. Avoid images that could be seen as staged or misleading relative to the story."
+    },
+    "additional": {
+      "guidelines": "Fact-check every statistic and quote before publishing. Flag anything unverified for editorial review rather than softening it with hedge words. Always attribute quotes to a named, on-record source where possible. Corrections must be appended transparently, not silently edited. Avoid superlatives ('unprecedented', 'historic') unless directly substantiated or quoting a source. Alt text should describe the newsworthy content of an image plainly and factually (who/what/where), not artistic interpretation."
+    },
+    "blocks": {
+      "core/paragraph": {
+        "guidelines": "Keep paragraphs short — 1 to 3 sentences. One idea per paragraph. Lead each paragraph with the most important information first, in true inverted-pyramid style."
+      },
+      "core/heading": {
+        "guidelines": "Headlines and subheads must be factual and specific, not clever or vague. Use sentence case. Front-load key terms for SEO and scannability. No clickbait phrasing ('You won't believe...')."
+      },
+      "core/image": {
+        "guidelines": "Include a cutline with source/photographer credit for every image. Alt text describes who/what/where factually. Prefer real photography from the event over stock or illustrated substitutes."
+      },
+      "core/quote": {
+        "guidelines": "Pull quotes must be verbatim and attributed by full name and title on first reference. Never paraphrase inside a quote block."
+      }
+    }
+  }
+}
