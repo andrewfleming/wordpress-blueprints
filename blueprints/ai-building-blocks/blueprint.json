@@ -1,0 +1,18 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "meta": {
+    "title": "AI Building Blocks",
+    "author": "andrewfleming",
+    "description": "Stub blueprint — TODO: flesh out with the actual plugins/theme/content for the AI building blocks demo."
+  },
+  "landingPage": "/wp-admin/",
+  "preferredVersions": { "php": "8.3", "wp": "latest" },
+  "login": true,
+  "steps": [
+    {
+      "step": "installPlugin",
+      "pluginData": { "resource": "wordpress.org/plugins", "slug": "gutenberg" },
+      "options": { "activate": true }
+    }
+  ]
+}

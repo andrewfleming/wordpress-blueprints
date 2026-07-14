@@ -1,0 +1,2 @@
+-- Shared demo user seed data, reused across blueprints via a `url` resource.
+-- Stub — add INSERT statements for common demo users here.

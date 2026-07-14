@@ -1,0 +1,38 @@
+name: Validate blueprints
+
+on:
+  push:
+    paths:
+      - "blueprints/**"
+      - ".github/workflows/validate-blueprints.yml"
+  pull_request:
+    paths:
+      - "blueprints/**"
+      - ".github/workflows/validate-blueprints.yml"
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    outputs:
+      blueprints: ${{ steps.list.outputs.blueprints }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: list
+        run: |
+          dirs=$(find blueprints -mindepth 1 -maxdepth 1 -type d | sort | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          echo "blueprints=$dirs" >> "$GITHUB_OUTPUT"
+
+  validate:
+    needs: discover
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        blueprint: ${{ fromJson(needs.discover.outputs.blueprints) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Run blueprint
+        run: npx @wp-playground/cli run-blueprint --blueprint="./${{ matrix.blueprint }}" --blueprint-may-read-adjacent-files
