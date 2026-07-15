@@ -3,22 +3,229 @@
   "meta": {
     "title": "AI Building Blocks",
     "author": "ajfleming",
-    "description": "Stub blueprint — TODO: flesh out with the actual plugins/theme/content for the AI building blocks demo."
+    "description": "Demo environment for WordPress core's AI building blocks, along with plugins that implement features on top of these new APIs. You will need your own API keys for your AI providers."
   },
-  "landingPage": "/wp-admin/",
-  "preferredVersions": { "php": "8.3", "wp": "latest" },
+  "landingPage": "/wp-admin/options-connectors.php",
+  "preferredVersions": {
+    "php": "8.4",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
   "login": true,
   "steps": [
     {
       "step": "installPlugin",
-      "pluginData": { "resource": "wordpress.org/plugins", "slug": "gutenberg" },
-      "options": { "activate": true }
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "gutenberg"
+      },
+      "options": {
+        "activate": true
+      },
+      "progress": {
+        "weight": 3,
+        "caption": "Installing Gutenberg…"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "ai"
+      },
+      "options": {
+        "activate": true
+      },
+      "progress": {
+        "weight": 2,
+        "caption": "Installing the AI plugin (experiments, Abilities Explorer, Connectors UI)…"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "ai-provider-for-openai"
+      },
+      "options": {
+        "activate": true
+      },
+      "progress": {
+        "weight": 1,
+        "caption": "Installing the OpenAI connector…"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/mu-plugins/ai-client-timeout.php",
+      "data": "<?php\ndefined( 'ABSPATH' ) || exit;\nfunction ai_client_timeout_get_provider_hosts(): array {\n\treturn array(\n\t\t'api.openai.com',                    \n\t\t'generativelanguage.googleapis.com', \n\t\t'api.anthropic.com',                 \n\t);\n}\nfunction ai_client_timeout_is_provider_url( string $url ): bool {\n\tforeach ( ai_client_timeout_get_provider_hosts() as $host ) {\n\t\tif ( false !== strpos( $url, $host ) ) {\n\t\t\treturn true;\n\t\t}\n\t}\n\treturn false;\n}\nadd_filter(\n\t'http_request_args',\n\tstatic function ( array $args, string $url ): array {\n\t\tif ( ai_client_timeout_is_provider_url( $url ) ) {\n\t\t\t$args['timeout'] = 300;\n\t\t\t\n\t\t\t\n\t\t\tset_time_limit( 300 );\n\t\t\terror_log(\n\t\t\t\t'[ai-timeout] http_request_args: set timeout=300 and set_time_limit(300) for ' . $url . \"\\n\",\n\t\t\t\t3,\n\t\t\t\tWP_CONTENT_DIR . '/ai-timeout-debug.log'\n\t\t\t);\n\t\t}\n\t\treturn $args;\n\t},\n\t9999,\n\t2\n);\nadd_action(\n\t'http_api_curl',\n\tstatic function ( $handle, array $args, string $url ): void {\n\t\tif ( ! ai_client_timeout_is_provider_url( $url ) ) {\n\t\t\treturn;\n\t\t}\n\t\tcurl_setopt( $handle, CURLOPT_LOW_SPEED_LIMIT, 0 ); \n\t\tcurl_setopt( $handle, CURLOPT_LOW_SPEED_TIME,  0 ); \n\t\terror_log(\n\t\t\t'[ai-timeout] http_api_curl: cleared stall guard for ' . $url . \"\\n\",\n\t\t\t3,\n\t\t\tWP_CONTENT_DIR . '/ai-timeout-debug.log'\n\t\t);\n\t},\n\t9999,\n\t3\n);\n",
+      "progress": {
+        "caption": "Installing AI client timeout fix (prevents image-generation stalls from OpenAI, Google, and Anthropic being killed early)…"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/mu-plugins/ai-file-dto-guard.php",
+      "data": "<?php\nnamespace WordPress\\AiClient\\Files\\DTO;\ndefined( 'ABSPATH' ) || exit;\nif ( ! function_exists( __NAMESPACE__ . '\\\\file_exists' ) ) {\n\tfunction file_exists( string $filename ): bool {\n\t\t$max_path_length = defined( 'PHP_MAXPATHLEN' ) ? PHP_MAXPATHLEN : 4096;\n\t\tif ( strlen( $filename ) > $max_path_length ) {\n\t\t\treturn false;\n\t\t}\n\t\treturn \\file_exists( $filename );\n\t}\n}\n",
+      "progress": {
+        "caption": "Installing file_exists() guard (stopgap for WordPress/php-ai-client#258 — prevents a crash on AI image import)…"
+      }
+    },
+    {
+      "step": "defineWpConfigConsts",
+      "consts": {
+        "WP_MEMORY_LIMIT": "512M",
+        "WP_MAX_MEMORY_LIMIT": "512M"
+      },
+      "progress": {
+        "caption": "Raising PHP memory limit for image generation post-processing…"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "ai-provider-for-anthropic"
+      },
+      "options": {
+        "activate": true
+      },
+      "progress": {
+        "weight": 1,
+        "caption": "Installing the Anthropic connector…"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "ai-provider-for-google"
+      },
+      "options": {
+        "activate": true
+      },
+      "progress": {
+        "weight": 1,
+        "caption": "Installing the Google connector…"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "url",
+        "url": "https://github.com/WordPress/mcp-adapter/releases/download/v0.5.0/mcp-adapter.zip"
+      },
+      "options": {
+        "activate": true
+      },
+      "progress": {
+        "weight": 2,
+        "caption": "Installing MCP Adapter…"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "wp-seopress"
+      },
+      "options": {
+        "activate": true
+      },
+      "progress": {
+        "weight": 1,
+        "caption": "Installing SEOPress…"
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "seopress_advanced_option_name": {
+          "seopress_advanced_advanced_attachments": "1",
+          "seopress_advanced_advanced_tax_desc_editor": "1",
+          "seopress_advanced_advanced_image_auto_alt_txt": "1",
+          "seopress_advanced_advanced_replytocom": "1",
+          "seopress_advanced_appearance_title_col": "0",
+          "seopress_advanced_appearance_meta_desc_col": "0",
+          "seopress_advanced_appearance_score_col": "0",
+          "seopress_advanced_appearance_noindex_col": "0",
+          "seopress_advanced_appearance_nofollow_col": "0",
+          "seopress_advanced_appearance_redirect_url_col": "0",
+          "seopress_advanced_appearance_redirect_enable_col": "0",
+          "seopress_advanced_appearance_canonical": "0",
+          "seopress_advanced_appearance_target_kw_col": "0",
+          "seopress_advanced_appearance_inbound_col": "0",
+          "seopress_advanced_appearance_outbound_col": "0",
+          "seopress_advanced_appearance_schema_col": "0",
+          "seopress_advanced_appearance_freeze_modified_date_col": "0"
+        }
+      },
+      "progress": {
+        "caption": "Hiding SEOPress admin columns…"
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "seopress_notices": {
+          "notice-wizard": "1"
+        },
+        "seopress_activated": ""
+      },
+      "progress": {
+        "caption": "Skipping the SEOPress setup wizard…"
+      }
+    },
+    {
+      "step": "activateTheme",
+      "themeFolderName": "twentytwentyfive"
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "gutenberg-experiments": {
+          "gutenberg-guidelines": true
+        }
+      },
+      "progress": {
+        "caption": "Enabling the Guidelines experiment…"
+      }
     },
     {
       "step": "importWxr",
       "file": {
         "resource": "url",
         "url": "https://raw.githubusercontent.com/andrewfleming/wordpress-blueprints/main/shared/content/ai-building-blocks+guidelines.xml"
+      },
+      "progress": {
+        "caption": "Importing example posts…"
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "wpai_features_enabled": true,
+        "wpai_feature_title-generation_enabled": true,
+        "wpai_feature_excerpt-generation_enabled": true,
+        "wpai_feature_editorial-notes_enabled": true,
+        "wpai_feature_editorial-updates_enabled": true,
+        "wpai_feature_content-resizing_enabled": true,
+        "wpai_feature_summarization_enabled": true,
+        "wpai_feature_meta-description_enabled": true,
+        "wpai_feature_ai-request-logging_enabled": true,
+        "wpai_feature_alt-text-generation_enabled": true,
+        "wpai_feature_connector-approval_enabled": false,
+        "wpai_feature_abilities-explorer_enabled": true,
+        "wpai_feature_content-classification_enabled": true,
+        "wpai_feature_content-classification_field_strategy": "allow_new",
+        "wpai_feature_comment-moderation_enabled": true,
+        "wpai_feature_image-generation_enabled": true,
+        "wpai_feature_type-ahead_enabled": true
+      },
+      "progress": {
+        "caption": "Enabling all AI plugin features…"
       }
     }
   ]
