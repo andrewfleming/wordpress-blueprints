@@ -6,7 +6,7 @@ Demo environment for WordPress core's AI building blocks, along with plugins tha
 - Installs [MCP Adapter](https://github.com/WordPress/mcp-adapter) and SEOPress (with its admin columns hidden and setup wizard skipped).
 - Ships two mu-plugins: one that raises the HTTP timeout for AI provider requests (image generation can be slow), and a stopgap `file_exists()` guard for [WordPress/php-ai-client#258](https://github.com/WordPress/php-ai-client/issues/258).
 - Raises the PHP memory limit for image-generation post-processing.
-- Enables the Guidelines experiment and imports example Media, Enterprise, and Public Sector posts (see [`shared/content/example-posts.xml`](../../shared/content/example-posts.xml)).
+- Enables the Guidelines experiment and imports example Media, Enterprise, and Public Sector posts (see [`shared/content/ai-building-blocks+guidelines.xml`](../../shared/content/ai-building-blocks+guidelines.xml)).
 - Enables all of the AI plugin's features.
 
 **You'll need your own API keys** for whichever AI providers (OpenAI, Anthropic, Google) you want to exercise — add them via the Connectors UI (the landing page) after the site boots.
