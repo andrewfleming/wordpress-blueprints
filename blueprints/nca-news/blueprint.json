@@ -1,0 +1,280 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "meta": {
+    "title": "NCA News",
+    "author": "ajfleming",
+    "description": "Demo newsroom site for News Corp Australia: the NCA News block theme, demo articles, authors and media, with WordPress AI building blocks, AI provider connectors, Co-Authors Plus and MCP Adapter. You will need your own API keys for your AI providers."
+  },
+  "landingPage": "/wp-admin/options-connectors.php",
+  "preferredVersions": {
+    "php": "8.4",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "login": true,
+  "steps": [
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "gutenberg"
+      },
+      "options": {
+        "activate": true
+      },
+      "progress": {
+        "weight": 3,
+        "caption": "Installing Gutenberg…"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "ai"
+      },
+      "options": {
+        "activate": true
+      },
+      "progress": {
+        "weight": 2,
+        "caption": "Installing the AI plugin…"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "ai-provider-for-anthropic"
+      },
+      "options": {
+        "activate": true
+      },
+      "progress": {
+        "weight": 1,
+        "caption": "Installing the Anthropic connector…"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "ai-provider-for-google"
+      },
+      "options": {
+        "activate": true
+      },
+      "progress": {
+        "weight": 1,
+        "caption": "Installing the Google connector…"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "ai-provider-for-openai"
+      },
+      "options": {
+        "activate": true
+      },
+      "progress": {
+        "weight": 1,
+        "caption": "Installing the OpenAI connector…"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "co-authors-plus"
+      },
+      "options": {
+        "activate": true
+      },
+      "progress": {
+        "weight": 1,
+        "caption": "Installing Co-Authors Plus…"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "url",
+        "url": "https://github.com/WordPress/mcp-adapter/releases/latest/download/mcp-adapter.zip"
+      },
+      "options": {
+        "activate": true
+      },
+      "progress": {
+        "weight": 2,
+        "caption": "Installing MCP Adapter…"
+      }
+    },
+    {
+      "step": "defineWpConfigConsts",
+      "consts": {
+        "WP_MEMORY_LIMIT": "512M",
+        "WP_MAX_MEMORY_LIMIT": "512M"
+      },
+      "progress": {
+        "caption": "Raising PHP memory limit…"
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "NCA News",
+        "blogdescription": "Australia’s leading news site for the latest headlines",
+        "timezone_string": "Australia/Sydney",
+        "date_format": "j F Y",
+        "time_format": "g:ia",
+        "start_of_week": "1",
+        "posts_per_page": "13",
+        "gutenberg-experiments": {
+          "gutenberg-guidelines": true,
+          "gutenberg-workflow-palette": true
+        }
+      },
+      "progress": {
+        "caption": "Configuring site settings and Gutenberg experiments…"
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "wpai_features_enabled": "1",
+        "wpai_global_toggle_removed": "1",
+        "wpai_feature_abilities-explorer_enabled": "1",
+        "wpai_feature_ai-request-logging_enabled": "1",
+        "wpai_feature_alt-text-generation_enabled": "1",
+        "wpai_feature_comment-moderation_enabled": "1",
+        "wpai_feature_content-classification_enabled": "1",
+        "wpai_feature_content-classification_field_strategy": "allow_new",
+        "wpai_feature_content-resizing_enabled": "1",
+        "wpai_feature_editorial-notes_enabled": "1",
+        "wpai_feature_editorial-updates_enabled": "1",
+        "wpai_feature_excerpt-generation_enabled": "1",
+        "wpai_feature_image-generation_enabled": "1",
+        "wpai_feature_meta-description_enabled": "1",
+        "wpai_feature_summarization_enabled": "1",
+        "wpai_feature_title-generation_enabled": "1",
+        "wpai_feature_type-ahead_enabled": "1"
+      },
+      "progress": {
+        "caption": "Enabling AI plugin features…"
+      }
+    },
+    {
+      "step": "unzip",
+      "zipFile": {
+        "resource": "url",
+        "url": "https://github.com/andrewfleming/wordpress-blueprints/releases/download/nca-news-v1/nca-news-uploads.zip"
+      },
+      "extractToPath": "/wordpress/wp-content/uploads",
+      "progress": {
+        "weight": 6,
+        "caption": "Downloading demo media (about 300 MB)…"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/tmp/nca-news-manifest.json",
+      "data": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/andrewfleming/wordpress-blueprints/main/shared/content/nca-news-manifest.json"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/tmp/nca-news-prepare.php",
+      "data": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/andrewfleming/wordpress-blueprints/main/blueprints/nca-news/setup/prepare.php"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/tmp/nca-news-finalize.php",
+      "data": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/andrewfleming/wordpress-blueprints/main/blueprints/nca-news/setup/finalize.php"
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/tmp/nca-news-prepare.php';",
+      "progress": {
+        "caption": "Creating authors and registering media…"
+      }
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/andrewfleming/wordpress-blueprints/main/shared/content/nca-news.xml"
+      },
+      "fetchAttachments": false,
+      "authorsMode": "map",
+      "authorsMap": {
+        "ben.matthews": "ben.matthews",
+        "daniel.rossi": "daniel.rossi",
+        "emma.kirkwood": "emma.kirkwood",
+        "grace.liu": "grace.liu",
+        "hannah.walsh": "hannah.walsh",
+        "jack.hennessy": "jack.hennessy",
+        "marcus.reid": "marcus.reid",
+        "mia.fortescue": "mia.fortescue",
+        "olivia.chen": "olivia.chen",
+        "priya.nair": "priya.nair",
+        "sam.obrien": "sam.obrien",
+        "tom.delaney": "tom.delaney",
+        "admin": "admin"
+      },
+      "progress": {
+        "weight": 3,
+        "caption": "Importing articles, guest authors and guidelines…"
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/tmp/nca-news-finalize.php';",
+      "progress": {
+        "caption": "Restoring category IDs, bylines and permalinks…"
+      }
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "git:directory",
+        "url": "https://github.com/andrewfleming/wordpress-blueprints",
+        "ref": "main",
+        "refType": "branch",
+        "path": "shared/themes/nca-news"
+      },
+      "options": {
+        "activate": true,
+        "targetFolderName": "nca-news"
+      },
+      "progress": {
+        "weight": 2,
+        "caption": "Installing the NCA News theme…"
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "permalink_structure": "/%category%/%postname%/"
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/wordpress/wp-load.php'; flush_rewrite_rules(); @unlink('/tmp/nca-news-manifest.json'); @unlink('/tmp/nca-news-prepare.php'); @unlink('/tmp/nca-news-finalize.php');",
+      "progress": {
+        "caption": "Finishing up…"
+      }
+    }
+  ]
+}
