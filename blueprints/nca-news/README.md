@@ -6,8 +6,10 @@ Demo newsroom site built with the News Corp Australia AI team: the NCA News bloc
 - Installs and activates the NCA News theme (source in [`shared/themes/nca-news`](../../shared/themes/nca-news/)) from `nca-news-theme.zip` on the release.
 - Downloads the demo media (about 300 MB) from the [`nca-news-v1` release](https://github.com/andrewfleming/wordpress-blueprints/releases/tag/nca-news-v1) and registers it with its original IDs and image sizes, so nothing is regenerated.
 - Creates the newsroom users, then imports articles, guest authors and Guidelines from [`shared/content/nca-news.xml`](../../shared/content/nca-news.xml).
-- Restores the original category IDs (the home template queries sections by ID), bylines and their order, sticky posts and permalinks. See [`setup/`](setup/) and [`shared/content/nca-news-manifest.json`](../../shared/content/nca-news-manifest.json).
+- Restores the original category IDs (the home template queries sections by ID), category parents, term assignments, bylines and their order, post authors, sticky posts and permalinks. Studio's blueprint runner imports terms without attaching them to posts, so these come from the manifest rather than the importer. See [`setup/`](setup/) and [`shared/content/nca-news-manifest.json`](../../shared/content/nca-news-manifest.json).
 - Enables the Guidelines and Workflow Palette experiments and all AI plugin features.
+
+Tested with Studio's own blueprint runner (`blueprints.phar`) and the Playground CLI.
 
 **You'll need your own API keys** for the AI providers. Add them on the Connectors screen, which opens when the site is ready.
 

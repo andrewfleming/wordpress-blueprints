@@ -4,12 +4,13 @@
  *
  * - Restores every term to its original ID. The theme's home template queries sections by
  *   category ID, and the WXR importer assigns new IDs, so this keeps the templates working.
- * - Restores post authors, Co-Authors Plus byline order, sticky posts and the privacy page.
+ * - Restores term assignments (categories, tags, bylines in order), post authors, sticky posts
+ *   and the privacy page from the manifest.
  */
-require_once '/wordpress/wp-load.php';
+defined( 'ABSPATH' ) || exit; // Loaded by the blueprint's runPHP step after wp-load.php.
 global $wpdb;
 
-$manifest = json_decode( file_get_contents( '/tmp/nca-news-manifest.json' ), true );
+$manifest = json_decode( file_get_contents( WP_CONTENT_DIR . '/nca-news-setup/nca-news-manifest.json' ), true );
 if ( ! is_array( $manifest ) ) {
 	throw new Exception( 'NCA News: manifest missing or invalid.' );
 }
@@ -61,6 +62,15 @@ foreach ( $tt_map as $from => $to ) {
 	$wpdb->query( $wpdb->prepare( "UPDATE $wpdb->term_relationships SET term_taxonomy_id = %d WHERE term_taxonomy_id = %d", $to, $f ) );
 }
 
+// Studio's importer drops category parents, so restore parents (and descriptions) from the manifest.
+foreach ( $manifest['terms'] as $t ) {
+	$fields = array( 'parent' => (int) $t['parent'] );
+	if ( 'author' !== $t['taxonomy'] ) {
+		$fields['description'] = $t['description'];
+	}
+	$wpdb->update( $wpdb->term_taxonomy, $fields, array( 'term_taxonomy_id' => (int) $t['tt'] ) );
+}
+
 foreach ( get_taxonomies() as $tax ) {
 	delete_option( "{$tax}_children" );
 }
@@ -76,18 +86,36 @@ foreach ( $manifest['post_authors'] as $post_id => $login ) {
 	$wpdb->update( $wpdb->posts, array( 'post_author' => $user_ids[ $login ] ), array( 'ID' => (int) $post_id ) );
 }
 
-// 4. Co-Authors Plus byline order (the importer does not keep term_order).
-foreach ( $manifest['coauthor_order'] as $post_id => $slugs ) {
-	foreach ( array_values( $slugs ) as $i => $slug ) {
-		$term = get_term_by( 'slug', $slug, 'author' );
-		if ( $term ) {
-			$wpdb->update(
-				$wpdb->term_relationships,
-				array( 'term_order' => $i ),
-				array( 'object_id' => (int) $post_id, 'term_taxonomy_id' => (int) $term->term_taxonomy_id )
-			);
-		}
+// 4. Term assignments: categories, tags, Co-Authors Plus bylines (in order) and Guidelines types.
+// Studio's importer creates the terms but does not attach them to posts, and Playground's
+// does not keep byline order, so every assignment is rewritten from the manifest.
+$tt_ids = array();
+foreach ( $wpdb->get_results( "SELECT t.slug, tt.taxonomy, tt.term_taxonomy_id FROM $wpdb->terms t JOIN $wpdb->term_taxonomy tt ON tt.term_id = t.term_id" ) as $r ) {
+	$tt_ids[ $r->taxonomy . '|' . $r->slug ] = (int) $r->term_taxonomy_id;
+}
+$objects = array();
+foreach ( $manifest['relationships'] as $rel ) {
+	$objects[ (int) $rel[0] ] = true;
+}
+foreach ( array_keys( $objects ) as $object_id ) {
+	if ( get_post( $object_id ) ) {
+		$wpdb->delete( $wpdb->term_relationships, array( 'object_id' => $object_id ) );
 	}
+}
+foreach ( $manifest['relationships'] as $rel ) {
+	list( $object_id, $taxonomy, $slug, $order ) = $rel;
+	$key = $taxonomy . '|' . $slug;
+	if ( isset( $tt_ids[ $key ] ) && get_post( $object_id ) ) {
+		$wpdb->insert(
+			$wpdb->term_relationships,
+			array( 'object_id' => (int) $object_id, 'term_taxonomy_id' => $tt_ids[ $key ], 'term_order' => (int) $order )
+		);
+	}
+}
+
+// Leftover importer bookkeeping post.
+foreach ( get_posts( array( 'post_type' => 'import_session', 'post_status' => 'any', 'numberposts' => -1 ) ) as $session ) {
+	wp_delete_post( $session->ID, true );
 }
 
 // 5. Sticky posts, privacy page, counts, permalinks.

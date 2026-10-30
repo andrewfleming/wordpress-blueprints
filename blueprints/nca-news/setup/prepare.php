@@ -7,9 +7,9 @@
  * - Registers the extracted media files as attachments with their original IDs and metadata,
  *   so featured images and image blocks resolve without re-downloading or regenerating sizes.
  */
-require_once '/wordpress/wp-load.php';
+defined( 'ABSPATH' ) || exit; // Loaded by the blueprint's runPHP step after wp-load.php.
 
-$manifest = json_decode( file_get_contents( '/tmp/nca-news-manifest.json' ), true );
+$manifest = json_decode( file_get_contents( WP_CONTENT_DIR . '/nca-news-setup/nca-news-manifest.json' ), true );
 if ( ! is_array( $manifest ) ) {
 	throw new Exception( 'NCA News: manifest missing or invalid.' );
 }

@@ -5,751 +5,1001 @@
             "id": 1,
             "tt": 1,
             "slug": "news",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 5,
             "tt": 5,
             "slug": "national",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 0,
+            "description": "Breaking Australian news from every state and territory: politics, crime, courts, weather and the stories people are talking about."
         },
         {
             "id": 6,
             "tt": 6,
             "slug": "nsw-act",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 5,
+            "description": ""
         },
         {
             "id": 7,
             "tt": 7,
             "slug": "victoria",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 5,
+            "description": ""
         },
         {
             "id": 8,
             "tt": 8,
             "slug": "queensland",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 5,
+            "description": ""
         },
         {
             "id": 9,
             "tt": 9,
             "slug": "western-australia",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 5,
+            "description": ""
         },
         {
             "id": 10,
             "tt": 10,
             "slug": "south-australia",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 5,
+            "description": ""
         },
         {
             "id": 11,
             "tt": 11,
             "slug": "politics",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 5,
+            "description": ""
         },
         {
             "id": 12,
             "tt": 12,
             "slug": "crime",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 5,
+            "description": ""
         },
         {
             "id": 13,
             "tt": 13,
             "slug": "courts-law",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 5,
+            "description": ""
         },
         {
             "id": 14,
             "tt": 14,
             "slug": "weather",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 5,
+            "description": ""
         },
         {
             "id": 15,
             "tt": 15,
             "slug": "world",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 0,
+            "description": "International news with an Australian angle: Asia, the Pacific, Europe and North America."
         },
         {
             "id": 16,
             "tt": 16,
             "slug": "asia",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 15,
+            "description": ""
         },
         {
             "id": 17,
             "tt": 17,
             "slug": "pacific",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 15,
+            "description": ""
         },
         {
             "id": 18,
             "tt": 18,
             "slug": "europe",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 15,
+            "description": ""
         },
         {
             "id": 19,
             "tt": 19,
             "slug": "north-america",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 15,
+            "description": ""
         },
         {
             "id": 20,
             "tt": 20,
             "slug": "us-politics",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 15,
+            "description": ""
         },
         {
             "id": 21,
             "tt": 21,
             "slug": "lifestyle",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 0,
+            "description": "Health, food, relationships, parenting, pets and real life stories."
         },
         {
             "id": 22,
             "tt": 22,
             "slug": "health",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 21,
+            "description": ""
         },
         {
             "id": 23,
             "tt": 23,
             "slug": "food",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 21,
+            "description": ""
         },
         {
             "id": 24,
             "tt": 24,
             "slug": "relationships",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 21,
+            "description": ""
         },
         {
             "id": 25,
             "tt": 25,
             "slug": "parenting",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 21,
+            "description": ""
         },
         {
             "id": 26,
             "tt": 26,
             "slug": "pets",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 21,
+            "description": ""
         },
         {
             "id": 27,
             "tt": 27,
             "slug": "real-life",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 21,
+            "description": ""
         },
         {
             "id": 28,
             "tt": 28,
             "slug": "travel",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 0,
+            "description": "Holiday ideas, travel deals and the advice every Aussie traveller needs."
         },
         {
             "id": 29,
             "tt": 29,
             "slug": "australian-holidays",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 28,
+            "description": ""
         },
         {
             "id": 30,
             "tt": 30,
             "slug": "world-travel",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 28,
+            "description": ""
         },
         {
             "id": 31,
             "tt": 31,
             "slug": "travel-advice",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 28,
+            "description": ""
         },
         {
             "id": 32,
             "tt": 32,
             "slug": "cruises",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 28,
+            "description": ""
         },
         {
             "id": 33,
             "tt": 33,
             "slug": "entertainment",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 0,
+            "description": "Celebrity news, TV, movies and music."
         },
         {
             "id": 34,
             "tt": 34,
             "slug": "celebrity-life",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 33,
+            "description": ""
         },
         {
             "id": 35,
             "tt": 35,
             "slug": "tv",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 33,
+            "description": ""
         },
         {
             "id": 36,
             "tt": 36,
             "slug": "movies",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 33,
+            "description": ""
         },
         {
             "id": 37,
             "tt": 37,
             "slug": "music",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 33,
+            "description": ""
         },
         {
             "id": 38,
             "tt": 38,
             "slug": "technology",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 0,
+            "description": "Gadgets, science, online safety, AI and motoring."
         },
         {
             "id": 39,
             "tt": 39,
             "slug": "gadgets",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 38,
+            "description": ""
         },
         {
             "id": 40,
             "tt": 40,
             "slug": "science",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 38,
+            "description": ""
         },
         {
             "id": 41,
             "tt": 41,
             "slug": "online",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 38,
+            "description": ""
         },
         {
             "id": 42,
             "tt": 42,
             "slug": "motoring",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 38,
+            "description": ""
         },
         {
             "id": 43,
             "tt": 43,
             "slug": "finance",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 0,
+            "description": "The economy, real estate, your money and your work."
         },
         {
             "id": 44,
             "tt": 44,
             "slug": "economy",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 43,
+            "description": ""
         },
         {
             "id": 45,
             "tt": 45,
             "slug": "real-estate",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 43,
+            "description": ""
         },
         {
             "id": 46,
             "tt": 46,
             "slug": "money",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 43,
+            "description": ""
         },
         {
             "id": 47,
             "tt": 47,
             "slug": "work",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 43,
+            "description": ""
         },
         {
             "id": 48,
             "tt": 48,
             "slug": "business",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 43,
+            "description": ""
         },
         {
             "id": 49,
             "tt": 49,
             "slug": "sport",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 0,
+            "description": "AFL, NRL, cricket, football, tennis and motorsport."
         },
         {
             "id": 50,
             "tt": 50,
             "slug": "afl",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 49,
+            "description": ""
         },
         {
             "id": 51,
             "tt": 51,
             "slug": "nrl",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 49,
+            "description": ""
         },
         {
             "id": 52,
             "tt": 52,
             "slug": "cricket",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 49,
+            "description": ""
         },
         {
             "id": 53,
             "tt": 53,
             "slug": "football",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 49,
+            "description": ""
         },
         {
             "id": 54,
             "tt": 54,
             "slug": "tennis",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 49,
+            "description": ""
         },
         {
             "id": 55,
             "tt": 55,
             "slug": "motorsport",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 49,
+            "description": ""
         },
         {
             "id": 56,
             "tt": 56,
             "slug": "breaking-news",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 57,
             "tt": 57,
             "slug": "exclusive",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 58,
             "tt": 58,
             "slug": "cost-of-living",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 59,
             "tt": 59,
             "slug": "housing-crisis",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 60,
             "tt": 60,
             "slug": "heatwave",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 61,
             "tt": 61,
             "slug": "bushfires",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 62,
             "tt": 62,
             "slug": "floods",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 63,
             "tt": 63,
             "slug": "sharks",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 64,
             "tt": 64,
             "slug": "crime",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 65,
             "tt": 65,
             "slug": "courts",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 66,
             "tt": 66,
             "slug": "anthony-albanese",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 67,
             "tt": 67,
             "slug": "federal-budget",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 68,
             "tt": 68,
             "slug": "interest-rates",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 69,
             "tt": 69,
             "slug": "rba",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 70,
             "tt": 70,
             "slug": "property",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 71,
             "tt": 71,
             "slug": "superannuation",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 72,
             "tt": 72,
             "slug": "ai",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 73,
             "tt": 73,
             "slug": "scams",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 74,
             "tt": 74,
             "slug": "electric-vehicles",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 75,
             "tt": 75,
             "slug": "space",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 76,
             "tt": 76,
             "slug": "celebrity",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 77,
             "tt": 77,
             "slug": "reality-tv",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 78,
             "tt": 78,
             "slug": "music-festivals",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 79,
             "tt": 79,
             "slug": "box-office",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 80,
             "tt": 80,
             "slug": "weddings",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 81,
             "tt": 81,
             "slug": "health",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 82,
             "tt": 82,
             "slug": "diet",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 83,
             "tt": 83,
             "slug": "dating",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 84,
             "tt": 84,
             "slug": "parenting",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 85,
             "tt": 85,
             "slug": "pets",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 86,
             "tt": 86,
             "slug": "bali",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 87,
             "tt": 87,
             "slug": "japan",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 88,
             "tt": 88,
             "slug": "airfares",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 89,
             "tt": 89,
             "slug": "cruises",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 90,
             "tt": 90,
             "slug": "tasmania",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 91,
             "tt": 91,
             "slug": "t20-world-cup",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 92,
             "tt": 92,
             "slug": "a-league",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 93,
             "tt": 93,
             "slug": "afl",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 94,
             "tt": 94,
             "slug": "state-of-origin",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 95,
             "tt": 95,
             "slug": "australian-open",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 96,
             "tt": 96,
             "slug": "us-politics",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 97,
             "tt": 97,
             "slug": "social-media-ban",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 98,
             "tt": 98,
             "slug": "cyclones",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 99,
             "tt": 99,
             "slug": "europe",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 100,
             "tt": 100,
             "slug": "china",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 101,
             "tt": 101,
             "slug": "trade",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 102,
             "tt": 102,
             "slug": "four-day-week",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 103,
             "tt": 103,
             "slug": "smartphones",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 104,
             "tt": 104,
             "slug": "nca-news",
-            "taxonomy": "wp_theme"
+            "taxonomy": "wp_theme",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 105,
             "tt": 105,
             "slug": "shopping",
-            "taxonomy": "category"
+            "taxonomy": "category",
+            "parent": 0,
+            "description": "Deals, sales and the products worth your money, picked by the news.com.au shopping team. Prices checked at the time of publishing."
         },
         {
             "id": 106,
             "tt": 106,
             "slug": "retail",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 107,
             "tt": 107,
             "slug": "home",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 108,
             "tt": 108,
             "slug": "fitness",
-            "taxonomy": "post_tag"
+            "taxonomy": "post_tag",
+            "parent": 0,
+            "description": ""
         },
         {
             "id": 109,
             "tt": 109,
             "slug": "cap-admin",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "admin   admin 1 admin@localhost.com"
         },
         {
             "id": 110,
             "tt": 110,
             "slug": "cap-ben-matthews",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Ben Matthews Ben Matthews ben.matthews 9 ben.matthews@nca-news.test"
         },
         {
             "id": 111,
             "tt": 111,
             "slug": "cap-daniel-rossi",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Daniel Rossi Daniel Rossi daniel.rossi 11 daniel.rossi@nca-news.test"
         },
         {
             "id": 112,
             "tt": 112,
             "slug": "cap-emma-kirkwood",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Emma Kirkwood Emma Kirkwood emma.kirkwood 2 emma.kirkwood@nca-news.test"
         },
         {
             "id": 113,
             "tt": 113,
             "slug": "cap-grace-liu",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Grace Liu Grace Liu grace.liu 7 grace.liu@nca-news.test"
         },
         {
             "id": 114,
             "tt": 114,
             "slug": "cap-hannah-walsh",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Hannah Walsh Hannah Walsh hannah.walsh 12 hannah.walsh@nca-news.test"
         },
         {
             "id": 115,
             "tt": 115,
             "slug": "cap-jack-hennessy",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Jack Hennessy Jack Hennessy jack.hennessy 3 jack.hennessy@nca-news.test"
         },
         {
             "id": 116,
             "tt": 116,
             "slug": "cap-marcus-reid",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Marcus Reid Marcus Reid marcus.reid 13 marcus.reid@nca-news.test"
         },
         {
             "id": 117,
             "tt": 117,
             "slug": "cap-mia-fortescue",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Mia Fortescue Mia Fortescue mia.fortescue 5 mia.fortescue@nca-news.test"
         },
         {
             "id": 118,
             "tt": 118,
             "slug": "cap-olivia-chen",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Olivia Chen Olivia Chen olivia.chen 10 olivia.chen@nca-news.test"
         },
         {
             "id": 119,
             "tt": 119,
             "slug": "cap-priya-nair",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Priya Nair Priya Nair priya.nair 4 priya.nair@nca-news.test"
         },
         {
             "id": 120,
             "tt": 120,
             "slug": "cap-sam-obrien",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Sam O'Brien Sam O'Brien sam.obrien 8 sam.obrien@nca-news.test"
         },
         {
             "id": 121,
             "tt": 121,
             "slug": "cap-tom-delaney",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Tom Delaney Tom Delaney tom.delaney 6 tom.delaney@nca-news.test"
         },
         {
             "id": 122,
             "tt": 122,
             "slug": "cap-rachel-moore",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Dr Rachel Moore Rachel Moore rachel-moore 236 rachel.moore@example.com"
         },
         {
             "id": 123,
             "tt": 123,
             "slug": "cap-liam-patterson",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Liam Patterson Liam Patterson liam-patterson 237 liam.patterson@example.com"
         },
         {
             "id": 124,
             "tt": 124,
             "slug": "cap-aisha-rahman",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Aisha Rahman Aisha Rahman aisha-rahman 238 aisha.rahman@example.com"
         },
         {
             "id": 125,
             "tt": 125,
             "slug": "cap-nick-kostas",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Nick Kostas Nick Kostas nick-kostas 239 nick.kostas@example.com"
         },
         {
             "id": 126,
             "tt": 126,
             "slug": "cap-sophie-tran",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "Sophie Tran Sophie Tran sophie-tran 240 sophie.tran@example.com"
         },
         {
             "id": 127,
             "tt": 127,
             "slug": "cap-nca-newsroom",
-            "taxonomy": "author"
+            "taxonomy": "author",
+            "parent": 0,
+            "description": "NCA Newsroom   nca-newsroom 241 newsroom@example.com"
         },
         {
             "id": 128,
             "tt": 128,
             "slug": "guideline",
-            "taxonomy": "wp_knowledge_type"
+            "taxonomy": "wp_knowledge_type",
+            "parent": 0,
+            "description": ""
         }
     ],
     "users": [
@@ -6124,136 +6374,1382 @@
         "477": "admin",
         "110": "admin"
     },
-    "coauthor_order": {
-        "159": [
+    "relationships": [
+        [
+            159,
+            "category",
+            "national",
+            0
+        ],
+        [
+            159,
+            "category",
+            "victoria",
+            0
+        ],
+        [
+            159,
+            "category",
+            "crime",
+            0
+        ],
+        [
+            159,
+            "post_tag",
+            "breaking-news",
+            0
+        ],
+        [
+            159,
+            "post_tag",
+            "crime",
+            0
+        ],
+        [
+            159,
+            "author",
             "cap-jack-hennessy",
+            1
+        ],
+        [
+            159,
+            "author",
             "cap-sophie-tran",
-            "cap-nick-kostas"
+            2
         ],
-        "162": [
+        [
+            159,
+            "author",
+            "cap-nick-kostas",
+            3
+        ],
+        [
+            160,
+            "category",
+            "national",
+            0
+        ],
+        [
+            160,
+            "category",
+            "nsw-act",
+            0
+        ],
+        [
+            160,
+            "post_tag",
+            "exclusive",
+            0
+        ],
+        [
+            161,
+            "category",
+            "national",
+            0
+        ],
+        [
+            161,
+            "category",
+            "nsw-act",
+            0
+        ],
+        [
+            161,
+            "category",
+            "weather",
+            0
+        ],
+        [
+            161,
+            "post_tag",
+            "breaking-news",
+            0
+        ],
+        [
+            161,
+            "post_tag",
+            "bushfires",
+            0
+        ],
+        [
+            162,
+            "category",
+            "national",
+            0
+        ],
+        [
+            162,
+            "category",
+            "queensland",
+            0
+        ],
+        [
+            162,
+            "post_tag",
+            "floods",
+            0
+        ],
+        [
+            162,
+            "author",
             "cap-hannah-walsh",
+            1
+        ],
+        [
+            162,
+            "author",
             "cap-liam-patterson",
-            "cap-nca-newsroom"
+            2
         ],
-        "213": [
+        [
+            162,
+            "author",
+            "cap-nca-newsroom",
+            3
+        ],
+        [
+            163,
+            "category",
+            "national",
+            0
+        ],
+        [
+            163,
+            "category",
+            "weather",
+            0
+        ],
+        [
+            163,
+            "post_tag",
+            "heatwave",
+            0
+        ],
+        [
+            164,
+            "category",
+            "national",
+            0
+        ],
+        [
+            164,
+            "category",
+            "politics",
+            0
+        ],
+        [
+            164,
+            "post_tag",
+            "cost-of-living",
+            0
+        ],
+        [
+            164,
+            "post_tag",
+            "federal-budget",
+            0
+        ],
+        [
+            165,
+            "category",
+            "national",
+            0
+        ],
+        [
+            165,
+            "category",
+            "nsw-act",
+            0
+        ],
+        [
+            165,
+            "category",
+            "courts-law",
+            0
+        ],
+        [
+            165,
+            "post_tag",
+            "courts",
+            0
+        ],
+        [
+            166,
+            "category",
+            "national",
+            0
+        ],
+        [
+            166,
+            "category",
+            "victoria",
+            0
+        ],
+        [
+            167,
+            "category",
+            "national",
+            0
+        ],
+        [
+            167,
+            "category",
+            "western-australia",
+            0
+        ],
+        [
+            167,
+            "category",
+            "finance",
+            0
+        ],
+        [
+            167,
+            "category",
+            "real-estate",
+            0
+        ],
+        [
+            167,
+            "post_tag",
+            "housing-crisis",
+            0
+        ],
+        [
+            167,
+            "post_tag",
+            "property",
+            0
+        ],
+        [
+            168,
+            "category",
+            "national",
+            0
+        ],
+        [
+            168,
+            "category",
+            "queensland",
+            0
+        ],
+        [
+            168,
+            "post_tag",
+            "sharks",
+            0
+        ],
+        [
+            171,
+            "category",
+            "world",
+            0
+        ],
+        [
+            171,
+            "post_tag",
+            "breaking-news",
+            0
+        ],
+        [
+            172,
+            "category",
+            "world",
+            0
+        ],
+        [
+            172,
+            "category",
+            "europe",
+            0
+        ],
+        [
+            172,
+            "post_tag",
+            "europe",
+            0
+        ],
+        [
+            173,
+            "category",
+            "world",
+            0
+        ],
+        [
+            173,
+            "category",
+            "us-politics",
+            0
+        ],
+        [
+            173,
+            "post_tag",
+            "us-politics",
+            0
+        ],
+        [
+            174,
+            "category",
+            "world",
+            0
+        ],
+        [
+            174,
+            "category",
+            "pacific",
+            0
+        ],
+        [
+            174,
+            "post_tag",
+            "cyclones",
+            0
+        ],
+        [
+            175,
+            "category",
+            "world",
+            0
+        ],
+        [
+            175,
+            "category",
+            "asia",
+            0
+        ],
+        [
+            175,
+            "category",
+            "travel",
+            0
+        ],
+        [
+            175,
+            "category",
+            "world-travel",
+            0
+        ],
+        [
+            175,
+            "post_tag",
+            "japan",
+            0
+        ],
+        [
+            176,
+            "category",
+            "world",
+            0
+        ],
+        [
+            176,
+            "category",
+            "europe",
+            0
+        ],
+        [
+            176,
+            "category",
+            "technology",
+            0
+        ],
+        [
+            176,
+            "category",
+            "online",
+            0
+        ],
+        [
+            176,
+            "post_tag",
+            "social-media-ban",
+            0
+        ],
+        [
+            177,
+            "category",
+            "entertainment",
+            0
+        ],
+        [
+            177,
+            "category",
+            "celebrity-life",
+            0
+        ],
+        [
+            177,
+            "category",
+            "movies",
+            0
+        ],
+        [
+            177,
+            "post_tag",
+            "celebrity",
+            0
+        ],
+        [
+            178,
+            "category",
+            "entertainment",
+            0
+        ],
+        [
+            178,
+            "category",
+            "celebrity-life",
+            0
+        ],
+        [
+            178,
+            "post_tag",
+            "celebrity",
+            0
+        ],
+        [
+            179,
+            "category",
+            "entertainment",
+            0
+        ],
+        [
+            179,
+            "category",
+            "tv",
+            0
+        ],
+        [
+            179,
+            "post_tag",
+            "reality-tv",
+            0
+        ],
+        [
+            180,
+            "category",
+            "entertainment",
+            0
+        ],
+        [
+            180,
+            "category",
+            "music",
+            0
+        ],
+        [
+            180,
+            "post_tag",
+            "music-festivals",
+            0
+        ],
+        [
+            181,
+            "category",
+            "entertainment",
+            0
+        ],
+        [
+            181,
+            "category",
+            "movies",
+            0
+        ],
+        [
+            181,
+            "post_tag",
+            "box-office",
+            0
+        ],
+        [
+            182,
+            "category",
+            "entertainment",
+            0
+        ],
+        [
+            182,
+            "category",
+            "celebrity-life",
+            0
+        ],
+        [
+            182,
+            "post_tag",
+            "celebrity",
+            0
+        ],
+        [
+            182,
+            "post_tag",
+            "weddings",
+            0
+        ],
+        [
+            183,
+            "category",
+            "lifestyle",
+            0
+        ],
+        [
+            183,
+            "category",
+            "health",
+            0
+        ],
+        [
+            183,
+            "post_tag",
+            "health",
+            0
+        ],
+        [
+            183,
+            "post_tag",
+            "diet",
+            0
+        ],
+        [
+            184,
+            "category",
+            "lifestyle",
+            0
+        ],
+        [
+            184,
+            "category",
+            "food",
+            0
+        ],
+        [
+            184,
+            "post_tag",
+            "cost-of-living",
+            0
+        ],
+        [
+            185,
+            "category",
+            "lifestyle",
+            0
+        ],
+        [
+            185,
+            "category",
+            "relationships",
+            0
+        ],
+        [
+            185,
+            "post_tag",
+            "dating",
+            0
+        ],
+        [
+            186,
+            "category",
+            "lifestyle",
+            0
+        ],
+        [
+            186,
+            "category",
+            "parenting",
+            0
+        ],
+        [
+            186,
+            "post_tag",
+            "parenting",
+            0
+        ],
+        [
+            187,
+            "category",
+            "lifestyle",
+            0
+        ],
+        [
+            187,
+            "category",
+            "relationships",
+            0
+        ],
+        [
+            188,
+            "category",
+            "lifestyle",
+            0
+        ],
+        [
+            188,
+            "category",
+            "pets",
+            0
+        ],
+        [
+            188,
+            "post_tag",
+            "heatwave",
+            0
+        ],
+        [
+            188,
+            "post_tag",
+            "pets",
+            0
+        ],
+        [
+            189,
+            "category",
+            "travel",
+            0
+        ],
+        [
+            189,
+            "category",
+            "travel-advice",
+            0
+        ],
+        [
+            189,
+            "post_tag",
+            "bali",
+            0
+        ],
+        [
+            190,
+            "category",
+            "travel",
+            0
+        ],
+        [
+            190,
+            "category",
+            "australian-holidays",
+            0
+        ],
+        [
+            190,
+            "post_tag",
+            "airfares",
+            0
+        ],
+        [
+            191,
+            "category",
+            "travel",
+            0
+        ],
+        [
+            191,
+            "category",
+            "australian-holidays",
+            0
+        ],
+        [
+            191,
+            "post_tag",
+            "tasmania",
+            0
+        ],
+        [
+            192,
+            "category",
+            "travel",
+            0
+        ],
+        [
+            192,
+            "category",
+            "world-travel",
+            0
+        ],
+        [
+            192,
+            "post_tag",
+            "japan",
+            0
+        ],
+        [
+            193,
+            "category",
+            "travel",
+            0
+        ],
+        [
+            193,
+            "category",
+            "cruises",
+            0
+        ],
+        [
+            193,
+            "post_tag",
+            "cruises",
+            0
+        ],
+        [
+            194,
+            "category",
+            "technology",
+            0
+        ],
+        [
+            194,
+            "category",
+            "online",
+            0
+        ],
+        [
+            194,
+            "category",
+            "finance",
+            0
+        ],
+        [
+            194,
+            "category",
+            "work",
+            0
+        ],
+        [
+            194,
+            "post_tag",
+            "ai",
+            0
+        ],
+        [
+            195,
+            "category",
+            "technology",
+            0
+        ],
+        [
+            195,
+            "category",
+            "gadgets",
+            0
+        ],
+        [
+            195,
+            "post_tag",
+            "smartphones",
+            0
+        ],
+        [
+            196,
+            "category",
+            "technology",
+            0
+        ],
+        [
+            196,
+            "category",
+            "motoring",
+            0
+        ],
+        [
+            196,
+            "post_tag",
+            "electric-vehicles",
+            0
+        ],
+        [
+            197,
+            "category",
+            "technology",
+            0
+        ],
+        [
+            197,
+            "category",
+            "online",
+            0
+        ],
+        [
+            197,
+            "post_tag",
+            "scams",
+            0
+        ],
+        [
+            198,
+            "category",
+            "technology",
+            0
+        ],
+        [
+            198,
+            "category",
+            "science",
+            0
+        ],
+        [
+            198,
+            "post_tag",
+            "space",
+            0
+        ],
+        [
+            199,
+            "category",
+            "finance",
+            0
+        ],
+        [
+            199,
+            "category",
+            "economy",
+            0
+        ],
+        [
+            199,
+            "post_tag",
+            "interest-rates",
+            0
+        ],
+        [
+            199,
+            "post_tag",
+            "rba",
+            0
+        ],
+        [
+            200,
+            "category",
+            "finance",
+            0
+        ],
+        [
+            200,
+            "category",
+            "real-estate",
+            0
+        ],
+        [
+            200,
+            "post_tag",
+            "housing-crisis",
+            0
+        ],
+        [
+            200,
+            "post_tag",
+            "property",
+            0
+        ],
+        [
+            201,
+            "category",
+            "finance",
+            0
+        ],
+        [
+            201,
+            "category",
+            "money",
+            0
+        ],
+        [
+            201,
+            "post_tag",
+            "superannuation",
+            0
+        ],
+        [
+            202,
+            "category",
+            "finance",
+            0
+        ],
+        [
+            202,
+            "category",
+            "economy",
+            0
+        ],
+        [
+            202,
+            "category",
+            "business",
+            0
+        ],
+        [
+            202,
+            "post_tag",
+            "china",
+            0
+        ],
+        [
+            202,
+            "post_tag",
+            "trade",
+            0
+        ],
+        [
+            203,
+            "category",
+            "finance",
+            0
+        ],
+        [
+            203,
+            "category",
+            "work",
+            0
+        ],
+        [
+            203,
+            "post_tag",
+            "four-day-week",
+            0
+        ],
+        [
+            204,
+            "category",
+            "sport",
+            0
+        ],
+        [
+            204,
+            "category",
+            "cricket",
+            0
+        ],
+        [
+            204,
+            "post_tag",
+            "t20-world-cup",
+            0
+        ],
+        [
+            205,
+            "category",
+            "sport",
+            0
+        ],
+        [
+            205,
+            "category",
+            "football",
+            0
+        ],
+        [
+            205,
+            "post_tag",
+            "a-league",
+            0
+        ],
+        [
+            206,
+            "category",
+            "sport",
+            0
+        ],
+        [
+            206,
+            "category",
+            "afl",
+            0
+        ],
+        [
+            206,
+            "post_tag",
+            "afl",
+            0
+        ],
+        [
+            207,
+            "category",
+            "sport",
+            0
+        ],
+        [
+            207,
+            "category",
+            "nrl",
+            0
+        ],
+        [
+            207,
+            "post_tag",
+            "state-of-origin",
+            0
+        ],
+        [
+            208,
+            "category",
+            "sport",
+            0
+        ],
+        [
+            208,
+            "category",
+            "tennis",
+            0
+        ],
+        [
+            208,
+            "post_tag",
+            "australian-open",
+            0
+        ],
+        [
+            209,
+            "category",
+            "national",
+            0
+        ],
+        [
+            209,
+            "category",
+            "nsw-act",
+            0
+        ],
+        [
+            210,
+            "category",
+            "entertainment",
+            0
+        ],
+        [
+            210,
+            "category",
+            "tv",
+            0
+        ],
+        [
+            211,
+            "category",
+            "finance",
+            0
+        ],
+        [
+            211,
+            "category",
+            "economy",
+            0
+        ],
+        [
+            212,
+            "category",
+            "national",
+            0
+        ],
+        [
+            212,
+            "category",
+            "queensland",
+            0
+        ],
+        [
+            212,
+            "category",
+            "weather",
+            0
+        ],
+        [
+            213,
+            "category",
+            "finance",
+            0
+        ],
+        [
+            213,
+            "category",
+            "money",
+            0
+        ],
+        [
+            213,
+            "post_tag",
+            "superannuation",
+            0
+        ],
+        [
+            213,
+            "author",
             "cap-olivia-chen",
-            "cap-rachel-moore"
+            1
         ],
-        "236": [
-            "cap-rachel-moore"
+        [
+            213,
+            "author",
+            "cap-rachel-moore",
+            2
         ],
-        "237": [
-            "cap-liam-patterson"
+        [
+            228,
+            "post_tag",
+            "cost-of-living",
+            0
         ],
-        "238": [
-            "cap-aisha-rahman"
+        [
+            228,
+            "category",
+            "shopping",
+            0
         ],
-        "239": [
-            "cap-nick-kostas"
+        [
+            228,
+            "post_tag",
+            "retail",
+            0
         ],
-        "240": [
-            "cap-sophie-tran"
+        [
+            229,
+            "post_tag",
+            "cost-of-living",
+            0
         ],
-        "241": [
-            "cap-nca-newsroom"
+        [
+            229,
+            "category",
+            "shopping",
+            0
         ],
-        "280": [
-            "cap-admin"
+        [
+            230,
+            "category",
+            "shopping",
+            0
         ],
-        "281": [
-            "cap-admin"
+        [
+            230,
+            "post_tag",
+            "home",
+            0
         ],
-        "282": [
-            "cap-admin"
+        [
+            231,
+            "category",
+            "shopping",
+            0
         ],
-        "283": [
-            "cap-admin"
+        [
+            231,
+            "post_tag",
+            "fitness",
+            0
         ],
-        "286": [
-            "cap-admin"
+        [
+            236,
+            "author",
+            "cap-rachel-moore",
+            1
         ],
-        "287": [
-            "cap-admin"
+        [
+            237,
+            "author",
+            "cap-liam-patterson",
+            1
         ],
-        "290": [
-            "cap-admin"
+        [
+            238,
+            "author",
+            "cap-aisha-rahman",
+            1
         ],
-        "307": [
-            "cap-admin"
+        [
+            239,
+            "author",
+            "cap-nick-kostas",
+            1
         ],
-        "308": [
-            "cap-admin"
+        [
+            240,
+            "author",
+            "cap-sophie-tran",
+            1
         ],
-        "309": [
-            "cap-admin"
+        [
+            241,
+            "author",
+            "cap-nca-newsroom",
+            1
         ],
-        "312": [
-            "cap-admin"
+        [
+            283,
+            "author",
+            "cap-admin",
+            1
         ],
-        "331": [
-            "cap-admin"
+        [
+            284,
+            "category",
+            "news",
+            0
         ],
-        "360": [
-            "cap-admin"
+        [
+            285,
+            "category",
+            "news",
+            0
         ],
-        "365": [
-            "cap-admin"
+        [
+            286,
+            "author",
+            "cap-admin",
+            1
         ],
-        "366": [
-            "cap-admin"
+        [
+            287,
+            "author",
+            "cap-admin",
+            1
         ],
-        "369": [
-            "cap-admin"
+        [
+            331,
+            "author",
+            "cap-admin",
+            1
         ],
-        "371": [
-            "cap-admin"
+        [
+            360,
+            "author",
+            "cap-admin",
+            1
         ],
-        "374": [
-            "cap-admin"
+        [
+            374,
+            "author",
+            "cap-admin",
+            1
         ],
-        "422": [
-            "cap-admin"
+        [
+            422,
+            "author",
+            "cap-admin",
+            1
         ],
-        "429": [
-            "cap-admin"
+        [
+            429,
+            "author",
+            "cap-admin",
+            1
         ],
-        "436": [
-            "cap-admin"
+        [
+            436,
+            "author",
+            "cap-admin",
+            1
         ],
-        "443": [
-            "cap-admin"
+        [
+            443,
+            "author",
+            "cap-admin",
+            1
         ],
-        "450": [
-            "cap-admin"
+        [
+            450,
+            "author",
+            "cap-admin",
+            1
         ],
-        "457": [
-            "cap-admin"
+        [
+            457,
+            "author",
+            "cap-admin",
+            1
         ],
-        "470": [
-            "cap-admin"
+        [
+            470,
+            "wp_knowledge_type",
+            "guideline",
+            0
         ],
-        "471": [
-            "cap-admin"
+        [
+            470,
+            "author",
+            "cap-admin",
+            1
         ],
-        "472": [
-            "cap-admin"
+        [
+            471,
+            "wp_knowledge_type",
+            "guideline",
+            0
         ],
-        "473": [
-            "cap-admin"
+        [
+            471,
+            "author",
+            "cap-admin",
+            1
         ],
-        "474": [
-            "cap-admin"
+        [
+            472,
+            "wp_knowledge_type",
+            "guideline",
+            0
         ],
-        "475": [
-            "cap-admin"
+        [
+            472,
+            "author",
+            "cap-admin",
+            1
         ],
-        "476": [
-            "cap-admin"
+        [
+            473,
+            "wp_knowledge_type",
+            "guideline",
+            0
         ],
-        "477": [
-            "cap-admin"
+        [
+            473,
+            "author",
+            "cap-admin",
+            1
+        ],
+        [
+            474,
+            "wp_knowledge_type",
+            "guideline",
+            0
+        ],
+        [
+            474,
+            "author",
+            "cap-admin",
+            1
+        ],
+        [
+            475,
+            "wp_knowledge_type",
+            "guideline",
+            0
+        ],
+        [
+            475,
+            "author",
+            "cap-admin",
+            1
+        ],
+        [
+            476,
+            "wp_knowledge_type",
+            "guideline",
+            0
+        ],
+        [
+            476,
+            "author",
+            "cap-admin",
+            1
+        ],
+        [
+            477,
+            "wp_knowledge_type",
+            "guideline",
+            0
+        ],
+        [
+            477,
+            "author",
+            "cap-admin",
+            1
         ]
-    },
+    ],
     "sticky_posts": [
         159
     ],

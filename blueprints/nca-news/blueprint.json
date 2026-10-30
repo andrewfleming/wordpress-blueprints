@@ -180,8 +180,12 @@
       }
     },
     {
+      "step": "mkdir",
+      "path": "/wordpress/wp-content/nca-news-setup"
+    },
+    {
       "step": "writeFile",
-      "path": "/tmp/nca-news-manifest.json",
+      "path": "/wordpress/wp-content/nca-news-setup/nca-news-manifest.json",
       "data": {
         "resource": "url",
         "url": "https://raw.githubusercontent.com/andrewfleming/wordpress-blueprints/main/shared/content/nca-news-manifest.json"
@@ -189,7 +193,7 @@
     },
     {
       "step": "writeFile",
-      "path": "/tmp/nca-news-prepare.php",
+      "path": "/wordpress/wp-content/nca-news-setup/prepare.php",
       "data": {
         "resource": "url",
         "url": "https://raw.githubusercontent.com/andrewfleming/wordpress-blueprints/main/blueprints/nca-news/setup/prepare.php"
@@ -197,7 +201,7 @@
     },
     {
       "step": "writeFile",
-      "path": "/tmp/nca-news-finalize.php",
+      "path": "/wordpress/wp-content/nca-news-setup/finalize.php",
       "data": {
         "resource": "url",
         "url": "https://raw.githubusercontent.com/andrewfleming/wordpress-blueprints/main/blueprints/nca-news/setup/finalize.php"
@@ -205,7 +209,7 @@
     },
     {
       "step": "runPHP",
-      "code": "<?php require '/tmp/nca-news-prepare.php';",
+      "code": "<?php require '/wordpress/wp-load.php'; require '/wordpress/wp-content/nca-news-setup/prepare.php';",
       "progress": {
         "caption": "Creating authors and registering media…"
       }
@@ -216,23 +220,6 @@
         "resource": "url",
         "url": "https://raw.githubusercontent.com/andrewfleming/wordpress-blueprints/main/shared/content/nca-news.xml"
       },
-      "fetchAttachments": false,
-      "authorsMode": "map",
-      "authorsMap": {
-        "ben.matthews": "ben.matthews",
-        "daniel.rossi": "daniel.rossi",
-        "emma.kirkwood": "emma.kirkwood",
-        "grace.liu": "grace.liu",
-        "hannah.walsh": "hannah.walsh",
-        "jack.hennessy": "jack.hennessy",
-        "marcus.reid": "marcus.reid",
-        "mia.fortescue": "mia.fortescue",
-        "olivia.chen": "olivia.chen",
-        "priya.nair": "priya.nair",
-        "sam.obrien": "sam.obrien",
-        "tom.delaney": "tom.delaney",
-        "admin": "admin"
-      },
       "progress": {
         "weight": 3,
         "caption": "Importing articles, guest authors and guidelines…"
@@ -240,7 +227,7 @@
     },
     {
       "step": "runPHP",
-      "code": "<?php require '/tmp/nca-news-finalize.php';",
+      "code": "<?php require '/wordpress/wp-load.php'; require '/wordpress/wp-content/nca-news-setup/finalize.php';",
       "progress": {
         "caption": "Restoring category IDs, bylines and permalinks…"
       }
@@ -267,7 +254,7 @@
     },
     {
       "step": "runPHP",
-      "code": "<?php require '/wordpress/wp-load.php'; flush_rewrite_rules(); @unlink('/tmp/nca-news-manifest.json'); @unlink('/tmp/nca-news-prepare.php'); @unlink('/tmp/nca-news-finalize.php');",
+      "code": "<?php require '/wordpress/wp-load.php'; flush_rewrite_rules(); foreach ( glob( WP_CONTENT_DIR . '/nca-news-setup/*' ) as $f ) { unlink( $f ); } @rmdir( WP_CONTENT_DIR . '/nca-news-setup' );",
       "progress": {
         "caption": "Finishing up…"
       }
