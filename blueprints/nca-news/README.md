@@ -3,7 +3,7 @@
 Demo newsroom site built with the News Corp Australia AI team: the NCA News block theme, demo articles, authors and media, plus WordPress's AI building blocks.
 
 - Installs Gutenberg, the [AI plugin](https://wordpress.org/plugins/ai/), the Anthropic, Google and OpenAI connectors, [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) and [MCP Adapter](https://github.com/WordPress/mcp-adapter) (latest release).
-- Installs and activates the NCA News theme from [`shared/themes/nca-news`](../../shared/themes/nca-news/).
+- Installs and activates the NCA News theme (source in [`shared/themes/nca-news`](../../shared/themes/nca-news/)) from `nca-news-theme.zip` on the release.
 - Downloads the demo media (about 300 MB) from the [`nca-news-v1` release](https://github.com/andrewfleming/wordpress-blueprints/releases/tag/nca-news-v1) and registers it with its original IDs and image sizes, so nothing is regenerated.
 - Creates the newsroom users, then imports articles, guest authors and Guidelines from [`shared/content/nca-news.xml`](../../shared/content/nca-news.xml).
 - Restores the original category IDs (the home template queries sections by ID), bylines and their order, sticky posts and permalinks. See [`setup/`](setup/) and [`shared/content/nca-news-manifest.json`](../../shared/content/nca-news-manifest.json).

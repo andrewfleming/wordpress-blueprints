@@ -248,15 +248,11 @@
     {
       "step": "installTheme",
       "themeData": {
-        "resource": "git:directory",
-        "url": "https://github.com/andrewfleming/wordpress-blueprints",
-        "ref": "main",
-        "refType": "branch",
-        "path": "shared/themes/nca-news"
+        "resource": "url",
+        "url": "https://github.com/andrewfleming/wordpress-blueprints/releases/download/nca-news-v1/nca-news-theme.zip"
       },
       "options": {
-        "activate": true,
-        "targetFolderName": "nca-news"
+        "activate": true
       },
       "progress": {
         "weight": 2,
